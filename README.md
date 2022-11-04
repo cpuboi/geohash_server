@@ -32,7 +32,7 @@ The default database is very simple, the strength comes when you ingest your own
   - The following code assumes that a simplemaps csv file has been generated in the previous step.
  ```
 import geohash_sqlite3
-geohash_sqlite3.create_sqlite_from_csv()
+geohash_sqlite3.create_sqlite_from_csv(csv_file="./geohash_tools/worldcities_formatted.csv", sqlite3_file="./geohash_worldcities.db")
 ``` 
 * After creating an SQLite database, run a couple of queries then optimize it to improve performance.  
 ```sqlite3 geohash_worldcities.db 'PRAGMA optimize;'```
