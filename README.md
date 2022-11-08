@@ -4,13 +4,13 @@ This is a reverse geohasher.
 It takes a geohash and returns the closest city or location.  
 
 It consists of a server and a client.   
-The SQLite database is designed as to be provide quick lookups without using much RAM.  
+The SQLite database is designed to quickly provide lookups without using much RAM.  
 
 The default database is very simple, the strength comes when you ingest your own custom data. 
 
 
 ### Server ###
-* Loads an SQLite database and listens to requests to a port, default is 9999.  
+* Loads a SQLite database and listens to requests on a port, default is 9999.  
 * Can (soon) be used in standalone mode from the terminal.  
 
 
